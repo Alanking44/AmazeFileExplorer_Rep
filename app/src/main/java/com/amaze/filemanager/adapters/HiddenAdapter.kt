@@ -37,7 +37,7 @@ import com.amaze.filemanager.filesystem.HybridFileParcelable
 import com.amaze.filemanager.filesystem.files.FileUtils
 import com.amaze.filemanager.ui.activities.MainActivity
 import com.amaze.filemanager.ui.fragments.MainFragment
-import com.amaze.filemanager.utils.DataUtils
+import com.amaze.filemanager.filesystem.utils.DataUtils
 import java.io.File
 import java.util.ArrayList
 import kotlin.concurrent.thread
@@ -89,7 +89,7 @@ class HiddenAdapter(
                 val task = DeleteTask(context, false)
                 task.execute(filesToDelete)
             }
-            DataUtils.getInstance().removeHiddenFile(hiddenFiles[position].path)
+            _root_ide_package_.com.amaze.filemanager.filesystem.utils.DataUtils.getInstance().removeHiddenFile(hiddenFiles[position].path)
             hiddenFiles.remove(hiddenFiles[position])
             notifyItemRemoved(position)
         }

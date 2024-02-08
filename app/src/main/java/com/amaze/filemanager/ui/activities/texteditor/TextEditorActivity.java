@@ -46,7 +46,7 @@ import com.amaze.filemanager.ui.dialogs.GeneralDialogCreation;
 import com.amaze.filemanager.ui.theme.AppTheme;
 import com.amaze.filemanager.utils.OnAsyncTaskFinished;
 import com.amaze.filemanager.utils.OnProgressUpdate;
-import com.amaze.filemanager.utils.Utils;
+import com.amaze.filemanager.filesystem.utils.Utils;
 import com.google.android.material.snackbar.Snackbar;
 
 import android.content.Context;

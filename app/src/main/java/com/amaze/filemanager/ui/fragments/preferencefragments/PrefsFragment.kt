@@ -27,7 +27,7 @@ import android.widget.Toast
 import androidx.preference.Preference
 import com.amaze.filemanager.R
 import com.amaze.filemanager.ui.activities.AboutActivity
-import com.amaze.filemanager.utils.Utils
+import com.amaze.filemanager.filesystem.utils.Utils
 
 class PrefsFragment : BasePrefsFragment() {
     override val title = R.string.setting
@@ -73,7 +73,7 @@ class PrefsFragment : BasePrefsFragment() {
 
         findPreference<Preference>("feedback")
             ?.onPreferenceClickListener = Preference.OnPreferenceClickListener {
-            val emailIntent = Utils.buildEmailIntent(requireContext(), null, Utils.EMAIL_SUPPORT)
+            val emailIntent = _root_ide_package_.com.amaze.filemanager.filesystem.utils.Utils.buildEmailIntent(requireContext(), null, _root_ide_package_.com.amaze.filemanager.filesystem.utils.Utils.EMAIL_SUPPORT)
 
             val activities = activity.packageManager.queryIntentActivities(
                 emailIntent,
@@ -90,7 +90,7 @@ class PrefsFragment : BasePrefsFragment() {
             } else {
                 Toast.makeText(
                     getActivity(),
-                    resources.getString(R.string.send_email_to) + " " + Utils.EMAIL_SUPPORT,
+                    resources.getString(R.string.send_email_to) + " " + _root_ide_package_.com.amaze.filemanager.filesystem.utils.Utils.EMAIL_SUPPORT,
                     Toast.LENGTH_LONG
                 )
                     .show()

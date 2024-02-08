@@ -41,7 +41,7 @@ import com.amaze.filemanager.ui.fragments.preferencefragments.PreferencesConstan
 import com.amaze.filemanager.ui.fragments.preferencefragments.PrefsFragment
 import com.amaze.filemanager.ui.theme.AppTheme
 import com.amaze.filemanager.utils.PreferenceUtils
-import com.amaze.filemanager.utils.Utils
+import com.amaze.filemanager.filesystem.utils.Utils
 import com.readystatesoftware.systembartint.SystemBarTintManager
 import java.io.File
 
@@ -153,7 +153,7 @@ class PreferencesActivity : ThemedActivity(), FolderChooserDialog.FolderCallback
                     window.navigationBarColor = Color.BLACK
                 }
                 appTheme == AppTheme.DARK -> {
-                    window.navigationBarColor = Utils.getColor(this, R.color.holo_dark_background)
+                    window.navigationBarColor = _root_ide_package_.com.amaze.filemanager.filesystem.utils.Utils.getColor(this, R.color.holo_dark_background)
                 }
                 appTheme == AppTheme.LIGHT -> {
                     window.navigationBarColor = Color.WHITE
@@ -161,7 +161,7 @@ class PreferencesActivity : ThemedActivity(), FolderChooserDialog.FolderCallback
             }
         }
         if (appTheme == AppTheme.BLACK) {
-            window.decorView.setBackgroundColor(Utils.getColor(this, android.R.color.black))
+            window.decorView.setBackgroundColor(_root_ide_package_.com.amaze.filemanager.filesystem.utils.Utils.getColor(this, android.R.color.black))
         }
     }
 

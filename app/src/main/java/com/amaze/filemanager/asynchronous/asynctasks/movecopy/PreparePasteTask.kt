@@ -44,7 +44,7 @@ import com.amaze.filemanager.filesystem.MakeDirectoryOperation
 import com.amaze.filemanager.filesystem.files.FileUtils
 import com.amaze.filemanager.ui.activities.MainActivity
 import com.amaze.filemanager.utils.OnFileFound
-import com.amaze.filemanager.utils.Utils
+import com.amaze.filemanager.filesystem.utils.Utils
 import kotlinx.coroutines.CompletableDeferred
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
@@ -211,7 +211,7 @@ class PreparePasteTask(strongRefMain: MainActivity) {
         dialogBuilder.customView(copyDialogBinding.root, true)
         val checkBox: AppCompatCheckBox = copyDialogBinding.checkBox
 
-        Utils.setTint(contextRef, checkBox, accentColor)
+        _root_ide_package_.com.amaze.filemanager.filesystem.utils.Utils.setTint(contextRef, checkBox, accentColor)
         dialogBuilder.theme(contextRef.appTheme.getMaterialDialogTheme())
         dialogBuilder.title(contextRef.resources.getString(R.string.paste))
         dialogBuilder.positiveText(R.string.rename)

@@ -32,7 +32,7 @@ import org.slf4j.LoggerFactory;
 import com.amaze.filemanager.adapters.data.AppDataParcelable;
 import com.amaze.filemanager.adapters.data.AppDataSorter;
 import com.amaze.filemanager.asynchronous.broadcast_receivers.PackageReceiver;
-import com.amaze.filemanager.utils.InterestingConfigChange;
+import com.amaze.filemanager.filesystem.utils.InterestingConfigChange;
 
 import android.content.Context;
 import android.content.pm.ApplicationInfo;

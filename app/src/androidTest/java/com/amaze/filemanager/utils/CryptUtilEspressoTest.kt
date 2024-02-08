@@ -64,7 +64,7 @@ class CryptUtilEspressoTest {
         CryptUtil(
             AppConfig.getInstance(),
             HybridFileParcelable(sourceFile.absolutePath),
-            ProgressHandler(),
+            _root_ide_package_.com.amaze.filemanager.filesystem.utils.ProgressHandler(),
             ArrayList(),
             "test.bin${CryptUtil.CRYPT_EXTENSION}",
             false,
@@ -94,7 +94,7 @@ class CryptUtilEspressoTest {
                 it.size = targetFile.length()
             },
             Environment.getExternalStorageDirectory().absolutePath,
-            ProgressHandler(),
+            _root_ide_package_.com.amaze.filemanager.filesystem.utils.ProgressHandler(),
             ArrayList(),
             null
         )
@@ -115,7 +115,7 @@ class CryptUtilEspressoTest {
         CryptUtil(
             AppConfig.getInstance(),
             HybridFileParcelable(sourceFile.absolutePath),
-            ProgressHandler(),
+            _root_ide_package_.com.amaze.filemanager.filesystem.utils.ProgressHandler(),
             ArrayList(),
             "test.bin${CryptUtil.AESCRYPT_EXTENSION}",
             true,
@@ -137,7 +137,7 @@ class CryptUtilEspressoTest {
                 it.size = targetFile.length()
             },
             Environment.getExternalStorageDirectory().absolutePath,
-            ProgressHandler(),
+            _root_ide_package_.com.amaze.filemanager.filesystem.utils.ProgressHandler(),
             ArrayList(),
             "12345678"
         )

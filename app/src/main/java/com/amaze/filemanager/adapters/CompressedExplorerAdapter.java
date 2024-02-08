@@ -38,7 +38,7 @@ import com.amaze.filemanager.ui.provider.UtilitiesProvider;
 import com.amaze.filemanager.ui.theme.AppTheme;
 import com.amaze.filemanager.ui.views.CircleGradientDrawable;
 import com.amaze.filemanager.utils.AnimUtils;
-import com.amaze.filemanager.utils.Utils;
+import com.amaze.filemanager.filesystem.utils.Utils;
 
 import android.app.Activity;
 import android.content.Context;

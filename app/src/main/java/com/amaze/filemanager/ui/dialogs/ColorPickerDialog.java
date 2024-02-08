@@ -27,7 +27,7 @@ import com.amaze.filemanager.ui.colors.UserColorPreferences;
 import com.amaze.filemanager.ui.fragments.preferencefragments.PreferencesConstants;
 import com.amaze.filemanager.ui.theme.AppTheme;
 import com.amaze.filemanager.ui.views.CircularColorsView;
-import com.amaze.filemanager.utils.Utils;
+import com.amaze.filemanager.filesystem.utils.Utils;
 
 import android.app.Dialog;
 import android.content.Context;

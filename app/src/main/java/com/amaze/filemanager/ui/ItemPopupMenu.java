@@ -40,7 +40,7 @@ import com.amaze.filemanager.ui.dialogs.GeneralDialogCreation;
 import com.amaze.filemanager.ui.fragments.MainFragment;
 import com.amaze.filemanager.ui.fragments.preferencefragments.PreferencesConstants;
 import com.amaze.filemanager.ui.provider.UtilitiesProvider;
-import com.amaze.filemanager.utils.DataUtils;
+import com.amaze.filemanager.filesystem.utils.DataUtils;
 
 import android.content.Context;
 import android.content.Intent;

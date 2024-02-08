@@ -24,7 +24,7 @@ import org.jetbrains.annotations.NotNull;
 
 import com.amaze.filemanager.ui.activities.MainActivity;
 import com.amaze.filemanager.ui.theme.AppTheme;
-import com.amaze.filemanager.utils.Utils;
+import com.amaze.filemanager.filesystem.utils.Utils;
 
 import android.content.Context;
 import android.util.AttributeSet;

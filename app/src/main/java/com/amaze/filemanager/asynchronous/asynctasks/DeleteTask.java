@@ -43,7 +43,7 @@ import com.amaze.filemanager.ui.activities.MainActivity;
 import com.amaze.filemanager.ui.fragments.CompressedExplorerFragment;
 import com.amaze.filemanager.ui.fragments.preferencefragments.PreferencesConstants;
 import com.amaze.filemanager.ui.notifications.NotificationConstants;
-import com.amaze.filemanager.utils.DataUtils;
+import com.amaze.filemanager.filesystem.utils.DataUtils;
 import com.amaze.filemanager.utils.OTGUtil;
 import com.cloudrail.si.interfaces.CloudStorage;
 

@@ -36,7 +36,7 @@ import com.amaze.filemanager.filesystem.Operations;
 import com.amaze.filemanager.filesystem.cloud.CloudUtil;
 import com.amaze.filemanager.filesystem.files.FileUtils;
 import com.amaze.filemanager.filesystem.root.RenameFileCommand;
-import com.amaze.filemanager.utils.DataUtils;
+import com.amaze.filemanager.filesystem.utils.DataUtils;
 import com.cloudrail.si.interfaces.CloudStorage;
 
 import android.content.Context;

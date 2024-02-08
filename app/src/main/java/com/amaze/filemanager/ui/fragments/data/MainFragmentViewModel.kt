@@ -38,7 +38,7 @@ import com.amaze.filemanager.filesystem.files.sort.SortType
 import com.amaze.filemanager.ui.fragments.preferencefragments.PreferencesConstants
 import com.amaze.filemanager.ui.fragments.preferencefragments.PreferencesConstants.PREFERENCE_GRID_COLUMNS
 import com.amaze.filemanager.ui.fragments.preferencefragments.PreferencesConstants.PREFERENCE_GRID_COLUMNS_DEFAULT
-import com.amaze.filemanager.utils.DataUtils
+import com.amaze.filemanager.filesystem.utils.DataUtils
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 import java.util.Objects
@@ -138,10 +138,10 @@ class MainFragmentViewModel : ViewModel() {
      * Initialize isList from dataUtils
      */
     fun initIsList() {
-        isList = DataUtils.getInstance().getListOrGridForPath(
+        isList = _root_ide_package_.com.amaze.filemanager.filesystem.utils.DataUtils.getInstance().getListOrGridForPath(
             currentPath,
-            DataUtils.LIST
-        ) == DataUtils.LIST
+            _root_ide_package_.com.amaze.filemanager.filesystem.utils.DataUtils.LIST
+        ) == _root_ide_package_.com.amaze.filemanager.filesystem.utils.DataUtils.LIST
     }
 
     /**

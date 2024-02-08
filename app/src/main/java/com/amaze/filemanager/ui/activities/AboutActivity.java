@@ -21,7 +21,7 @@
 package com.amaze.filemanager.ui.activities;
 
 import static com.amaze.filemanager.ui.fragments.preferencefragments.PreferencesConstants.PREFERENCE_COLORED_NAVIGATION;
-import static com.amaze.filemanager.utils.Utils.openURL;
+import static com.amaze.filemanager.filesystem.utils.Utils.openURL;
 
 import java.io.File;
 import java.util.ArrayList;
@@ -36,7 +36,7 @@ import com.amaze.filemanager.ui.dialogs.share.ShareTask;
 import com.amaze.filemanager.ui.theme.AppTheme;
 import com.amaze.filemanager.utils.Billing;
 import com.amaze.filemanager.utils.PreferenceUtils;
-import com.amaze.filemanager.utils.Utils;
+import com.amaze.filemanager.filesystem.utils.Utils;
 import com.google.android.material.appbar.AppBarLayout;
 import com.google.android.material.appbar.CollapsingToolbarLayout;
 import com.mikepenz.aboutlibraries.Libs;

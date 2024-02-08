@@ -41,7 +41,7 @@ import com.amaze.filemanager.filesystem.HybridFile;
 import com.amaze.filemanager.filesystem.HybridFileParcelable;
 import com.amaze.filemanager.ui.activities.MainActivity;
 import com.amaze.filemanager.ui.icons.MimeTypes;
-import com.amaze.filemanager.utils.DataUtils;
+import com.amaze.filemanager.filesystem.utils.DataUtils;
 import com.amaze.filemanager.utils.OTGUtil;
 import com.amaze.filemanager.utils.OnFileFound;
 import com.cloudrail.si.interfaces.CloudStorage;

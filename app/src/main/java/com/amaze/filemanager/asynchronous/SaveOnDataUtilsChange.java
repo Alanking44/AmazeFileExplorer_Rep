@@ -26,7 +26,7 @@ import com.amaze.filemanager.application.AppConfig;
 import com.amaze.filemanager.database.UtilsHandler;
 import com.amaze.filemanager.database.models.OperationData;
 import com.amaze.filemanager.ui.views.drawer.Drawer;
-import com.amaze.filemanager.utils.DataUtils;
+import com.amaze.filemanager.filesystem.utils.DataUtils;
 
 import androidx.annotation.NonNull;
 

@@ -27,7 +27,7 @@ import androidx.recyclerview.widget.RecyclerView
 import com.amaze.filemanager.R
 import com.amaze.filemanager.ui.provider.UtilitiesProvider
 import com.amaze.filemanager.ui.theme.AppTheme
-import com.amaze.filemanager.utils.Utils
+import com.amaze.filemanager.filesystem.utils.Utils
 
 /**
  * Check [com.amaze.filemanager.adapters.RecyclerAdapter]'s doc.
@@ -60,9 +60,9 @@ class SpecialViewHolder(
         // if(utilsProvider.getAppTheme().equals(AppTheme.DARK))
         //    view.setBackgroundResource(R.color.holo_dark_background);
         if (utilsProvider.appTheme == AppTheme.LIGHT) {
-            txtTitle.setTextColor(Utils.getColor(c, R.color.text_light))
+            txtTitle.setTextColor(_root_ide_package_.com.amaze.filemanager.filesystem.utils.Utils.getColor(c, R.color.text_light))
         } else {
-            txtTitle.setTextColor(Utils.getColor(c, R.color.text_dark))
+            txtTitle.setTextColor(_root_ide_package_.com.amaze.filemanager.filesystem.utils.Utils.getColor(c, R.color.text_dark))
         }
     }
 }

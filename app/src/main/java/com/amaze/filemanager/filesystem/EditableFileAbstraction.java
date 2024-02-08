@@ -23,7 +23,7 @@ package com.amaze.filemanager.filesystem;
 import static com.amaze.filemanager.filesystem.EditableFileAbstraction.Scheme.CONTENT;
 import static com.amaze.filemanager.filesystem.EditableFileAbstraction.Scheme.FILE;
 
-import com.amaze.filemanager.utils.Utils;
+import com.amaze.filemanager.filesystem.utils.Utils;
 
 import android.content.ContentResolver;
 import android.content.Context;

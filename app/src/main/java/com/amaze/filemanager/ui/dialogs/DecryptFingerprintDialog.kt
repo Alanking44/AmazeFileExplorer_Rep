@@ -33,7 +33,7 @@ import com.amaze.filemanager.filesystem.files.CryptUtil
 import com.amaze.filemanager.filesystem.files.EncryptDecryptUtils.DecryptButtonCallbackInterface
 import com.amaze.filemanager.ui.activities.MainActivity
 import com.amaze.filemanager.ui.theme.AppTheme
-import com.amaze.filemanager.utils.FingerprintHandler
+import com.amaze.filemanager.filesystem.utils.FingerprintHandler
 import java.io.IOException
 import java.security.GeneralSecurityException
 
@@ -72,7 +72,12 @@ object DecryptFingerprintDialog {
         val dialog = builder.show()
         cancelButton.setOnClickListener { v: View? -> dialog.cancel() }
         val manager = c.getSystemService(FingerprintManager::class.java)
-        val handler = FingerprintHandler(c, intent, dialog, decryptButtonCallbackInterface)
+        val handler = _root_ide_package_.com.amaze.filemanager.filesystem.utils.FingerprintHandler(
+            c,
+            intent,
+            dialog,
+            decryptButtonCallbackInterface
+        )
         val `object` = FingerprintManager.CryptoObject(CryptUtil.initCipher())
         handler.authenticate(manager, `object`)
     }

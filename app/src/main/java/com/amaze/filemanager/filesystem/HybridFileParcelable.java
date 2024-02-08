@@ -29,7 +29,7 @@ import org.slf4j.LoggerFactory;
 import com.amaze.filemanager.fileoperations.filesystem.OpenMode;
 import com.amaze.filemanager.filesystem.files.sort.ComparableParcelable;
 import com.amaze.filemanager.filesystem.ftp.ExtensionsKt;
-import com.amaze.filemanager.utils.Utils;
+import com.amaze.filemanager.filesystem.utils.Utils;
 
 import android.content.ContentResolver;
 import android.content.Context;

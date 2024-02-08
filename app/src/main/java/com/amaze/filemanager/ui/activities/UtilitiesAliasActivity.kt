@@ -29,7 +29,7 @@ import com.amaze.filemanager.application.AppConfig
 import com.amaze.filemanager.databinding.UtilitiesAliasLayoutBinding
 import com.amaze.filemanager.ui.updateAUAlias
 import com.amaze.filemanager.utils.PackageUtils
-import com.amaze.filemanager.utils.Utils
+import com.amaze.filemanager.filesystem.utils.Utils
 import org.slf4j.Logger
 import org.slf4j.LoggerFactory
 
@@ -44,7 +44,7 @@ class UtilitiesAliasActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(_binding.root)
         _binding.downloadButton.setOnClickListener {
-            Utils.openURL(
+            _root_ide_package_.com.amaze.filemanager.filesystem.utils.Utils.openURL(
                 if (BuildConfig.IS_VERSION_FDROID) {
                     AboutActivity.URL_AMAZE_UTILS_FDROID
                 } else {

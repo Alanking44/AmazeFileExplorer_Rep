@@ -49,9 +49,9 @@ import com.amaze.filemanager.filesystem.HybridFileParcelable;
 import com.amaze.filemanager.filesystem.MediaStoreHack;
 import com.amaze.filemanager.filesystem.SafRootHolder;
 import com.amaze.filemanager.filesystem.cloud.CloudUtil;
-import com.amaze.filemanager.utils.DataUtils;
+import com.amaze.filemanager.filesystem.utils.DataUtils;
 import com.amaze.filemanager.utils.OTGUtil;
-import com.amaze.filemanager.utils.ProgressHandler;
+import com.amaze.filemanager.filesystem.utils.ProgressHandler;
 import com.cloudrail.si.interfaces.CloudStorage;
 
 import android.content.ContentResolver;

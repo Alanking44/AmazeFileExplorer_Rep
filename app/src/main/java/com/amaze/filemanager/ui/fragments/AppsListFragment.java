@@ -41,8 +41,8 @@ import com.amaze.filemanager.ui.activities.MainActivity;
 import com.amaze.filemanager.ui.provider.UtilitiesProvider;
 import com.amaze.filemanager.ui.theme.AppTheme;
 import com.amaze.filemanager.ui.views.FastScroller;
-import com.amaze.filemanager.utils.GlideConstants;
-import com.amaze.filemanager.utils.Utils;
+import com.amaze.filemanager.filesystem.utils.GlideConstants;
+import com.amaze.filemanager.filesystem.utils.Utils;
 import com.bumptech.glide.integration.recyclerview.RecyclerViewPreloader;
 import com.bumptech.glide.util.ViewPreloadSizeProvider;
 

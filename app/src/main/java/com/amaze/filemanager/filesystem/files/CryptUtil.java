@@ -49,7 +49,7 @@ import com.amaze.filemanager.filesystem.HybridFileParcelable;
 import com.amaze.filemanager.filesystem.MakeDirectoryOperation;
 import com.amaze.filemanager.ui.fragments.preferencefragments.PreferencesConstants;
 import com.amaze.filemanager.utils.AESCrypt;
-import com.amaze.filemanager.utils.ProgressHandler;
+import com.amaze.filemanager.filesystem.utils.ProgressHandler;
 import com.amaze.filemanager.utils.security.SecretKeygen;
 
 import android.content.Context;

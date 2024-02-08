@@ -63,7 +63,7 @@ import com.amaze.filemanager.ui.activities.superclasses.ThemedActivity
 import com.amaze.filemanager.ui.icons.MimeTypes
 import com.amaze.filemanager.ui.provider.UtilitiesProvider
 import com.amaze.filemanager.utils.BookSorter
-import com.amaze.filemanager.utils.DataUtils
+import com.amaze.filemanager.filesystem.utils.DataUtils
 import com.amaze.filemanager.utils.MinMaxInputFilter
 import com.amaze.filemanager.utils.PasswordUtil
 import com.amaze.filemanager.utils.SimpleTextWatcher
@@ -286,11 +286,11 @@ class SftpConnectDialog : DialogFragment() {
                         requireArguments().getString(ARG_PASSWORD, null),
                         edit = true
                     )
-                    val i = DataUtils.getInstance().containsServer(
+                    val i = _root_ide_package_.com.amaze.filemanager.filesystem.utils.DataUtils.getInstance().containsServer(
                         arrayOf(connectionName, path)
                     )
                     if (i > -1) {
-                        DataUtils.getInstance().removeServer(i)
+                        _root_ide_package_.com.amaze.filemanager.filesystem.utils.DataUtils.getInstance().removeServer(i)
                         AppConfig.getInstance()
                             .runInBackground {
                                 AppConfig.getInstance().utilsHandler.removeFromDatabase(
@@ -676,8 +676,8 @@ class SftpConnectDialog : DialogFragment() {
                     },
                     selectedParsedKeyPair
                 )?.run {
-                    if (DataUtils.getInstance().containsServer(encryptedPath) == -1) {
-                        DataUtils.getInstance().addServer(arrayOf(connectionName, encryptedPath))
+                    if (_root_ide_package_.com.amaze.filemanager.filesystem.utils.DataUtils.getInstance().containsServer(encryptedPath) == -1) {
+                        _root_ide_package_.com.amaze.filemanager.filesystem.utils.DataUtils.getInstance().addServer(arrayOf(connectionName, encryptedPath))
                         (activity as MainActivity).drawer.refreshDrawer()
                         AppConfig.getInstance().utilsHandler.saveToDatabase(
                             OperationData(
@@ -723,14 +723,14 @@ class SftpConnectDialog : DialogFragment() {
         hostKeyFingerprint: String?,
         encryptedPath: String
     ): Boolean {
-        val i = DataUtils.getInstance().containsServer(oldPath)
+        val i = _root_ide_package_.com.amaze.filemanager.filesystem.utils.DataUtils.getInstance().containsServer(oldPath)
 
         if (i != -1) {
-            DataUtils.getInstance().removeServer(i)
+            _root_ide_package_.com.amaze.filemanager.filesystem.utils.DataUtils.getInstance().removeServer(i)
         }
 
-        DataUtils.getInstance().addServer(arrayOf(connectionName, encryptedPath))
-        DataUtils.getInstance().servers.sortWith(BookSorter())
+        _root_ide_package_.com.amaze.filemanager.filesystem.utils.DataUtils.getInstance().addServer(arrayOf(connectionName, encryptedPath))
+        _root_ide_package_.com.amaze.filemanager.filesystem.utils.DataUtils.getInstance().servers.sortWith(BookSorter())
         (activity as MainActivity).drawer.refreshDrawer()
         AppConfig.getInstance().runInBackground {
             AppConfig.getInstance().utilsHandler.updateSsh(

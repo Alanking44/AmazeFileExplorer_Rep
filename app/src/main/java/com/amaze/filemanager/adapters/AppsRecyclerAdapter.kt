@@ -65,7 +65,7 @@ import com.amaze.filemanager.ui.fragments.preferencefragments.PreferencesConstan
 import com.amaze.filemanager.ui.startActivityCatchingSecurityException
 import com.amaze.filemanager.ui.theme.AppTheme
 import com.amaze.filemanager.utils.AnimUtils.marqueeAfterDelay
-import com.amaze.filemanager.utils.Utils
+import com.amaze.filemanager.filesystem.utils.Utils
 import com.amaze.filemanager.utils.safeLet
 import java.io.File
 import kotlin.math.roundToInt
@@ -211,7 +211,7 @@ class AppsRecyclerAdapter(
             }
             if (myChecked[position]) {
                 holder.rl.setBackgroundColor(
-                    Utils.getColor(fragment.context, R.color.appsadapter_background)
+                    _root_ide_package_.com.amaze.filemanager.filesystem.utils.Utils.getColor(fragment.context, R.color.appsadapter_background)
                 )
             } else {
                 if ((fragment.requireActivity() as MainActivity).appTheme == AppTheme.LIGHT) {

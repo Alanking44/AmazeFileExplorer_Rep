@@ -23,8 +23,8 @@ package com.amaze.filemanager.utils;
 import static android.os.Build.VERSION_CODES.KITKAT;
 import static android.os.Build.VERSION_CODES.N;
 import static android.os.Build.VERSION_CODES.P;
-import static com.amaze.filemanager.utils.Utils.formatTimer;
-import static com.amaze.filemanager.utils.Utils.sanitizeInput;
+import static com.amaze.filemanager.filesystem.utils.Utils.formatTimer;
+import static com.amaze.filemanager.filesystem.utils.Utils.sanitizeInput;
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertFalse;
 import static org.junit.Assert.assertNotNull;
@@ -47,6 +47,7 @@ import org.robolectric.shadows.ShadowToast;
 import com.amaze.filemanager.R;
 import com.amaze.filemanager.fileoperations.filesystem.OpenMode;
 import com.amaze.filemanager.filesystem.HybridFileParcelable;
+import com.amaze.filemanager.filesystem.utils.Utils;
 
 import android.net.Uri;
 import android.os.Build;

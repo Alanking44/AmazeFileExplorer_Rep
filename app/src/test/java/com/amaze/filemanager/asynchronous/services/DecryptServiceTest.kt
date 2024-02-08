@@ -44,7 +44,7 @@ import com.amaze.filemanager.filesystem.files.CryptUtil
 import com.amaze.filemanager.shadows.ShadowMultiDex
 import com.amaze.filemanager.utils.AESCrypt
 import com.amaze.filemanager.utils.CryptUtilTest.Companion.initMockSecretKeygen
-import com.amaze.filemanager.utils.ProgressHandler
+import com.amaze.filemanager.filesystem.utils.ProgressHandler
 import org.awaitility.Awaitility.await
 import org.junit.After
 import org.junit.Assert.assertArrayEquals
@@ -107,7 +107,7 @@ class DecryptServiceTest {
         CryptUtil(
             ApplicationProvider.getApplicationContext(),
             HybridFileParcelable(sourceFile.absolutePath),
-            ProgressHandler(),
+            _root_ide_package_.com.amaze.filemanager.filesystem.utils.ProgressHandler(),
             ArrayList<HybridFile>(),
             "test.bin${CryptUtil.CRYPT_EXTENSION}",
             false,
@@ -173,7 +173,7 @@ class DecryptServiceTest {
             AESCrypt("passW0rD").encrypt(
                 `in` = ByteArrayInputStream(source),
                 out = FileOutputStream(sourceFile),
-                progressHandler = ProgressHandler()
+                progressHandler = _root_ide_package_.com.amaze.filemanager.filesystem.utils.ProgressHandler()
             )
             await().atMost(10, TimeUnit.SECONDS).until {
                 sourceFile.length() > source.size

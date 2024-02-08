@@ -35,8 +35,8 @@ import com.amaze.filemanager.ui.fragments.CompressedExplorerFragment;
 import com.amaze.filemanager.ui.fragments.MainFragment;
 import com.amaze.filemanager.ui.fragments.TabFragment;
 import com.amaze.filemanager.utils.BottomBarButtonPath;
-import com.amaze.filemanager.utils.MainActivityHelper;
-import com.amaze.filemanager.utils.Utils;
+import com.amaze.filemanager.filesystem.utils.MainActivityHelper;
+import com.amaze.filemanager.filesystem.utils.Utils;
 
 import android.animation.Animator;
 import android.animation.AnimatorListenerAdapter;

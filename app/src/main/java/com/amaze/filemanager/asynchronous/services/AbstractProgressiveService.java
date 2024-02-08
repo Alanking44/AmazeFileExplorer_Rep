@@ -37,8 +37,8 @@ import com.amaze.filemanager.ui.activities.MainActivity;
 import com.amaze.filemanager.ui.fragments.ProcessViewerFragment;
 import com.amaze.filemanager.ui.notifications.NotificationConstants;
 import com.amaze.filemanager.utils.DatapointParcelable;
-import com.amaze.filemanager.utils.ProgressHandler;
-import com.amaze.filemanager.utils.Utils;
+import com.amaze.filemanager.filesystem.utils.ProgressHandler;
+import com.amaze.filemanager.filesystem.utils.Utils;
 
 import android.app.PendingIntent;
 import android.app.Service;

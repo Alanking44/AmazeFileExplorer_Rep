@@ -49,8 +49,8 @@ import com.amaze.filemanager.filesystem.root.MoveFileCommand;
 import com.amaze.filemanager.ui.activities.MainActivity;
 import com.amaze.filemanager.ui.notifications.NotificationConstants;
 import com.amaze.filemanager.utils.DatapointParcelable;
-import com.amaze.filemanager.utils.ObtainableServiceBinder;
-import com.amaze.filemanager.utils.ProgressHandler;
+import com.amaze.filemanager.filesystem.utils.ObtainableServiceBinder;
+import com.amaze.filemanager.filesystem.utils.ProgressHandler;
 
 import android.app.PendingIntent;
 import android.content.BroadcastReceiver;

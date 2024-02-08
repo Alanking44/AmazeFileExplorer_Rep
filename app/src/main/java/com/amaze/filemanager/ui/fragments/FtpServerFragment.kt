@@ -82,7 +82,7 @@ import com.amaze.filemanager.utils.NetworkUtil.isConnectedToLocalNetwork
 import com.amaze.filemanager.utils.NetworkUtil.isConnectedToWifi
 import com.amaze.filemanager.utils.OneCharacterCharSequence
 import com.amaze.filemanager.utils.PasswordUtil
-import com.amaze.filemanager.utils.Utils
+import com.amaze.filemanager.filesystem.utils.Utils
 import com.google.android.material.snackbar.BaseTransientBottomBar
 import com.google.android.material.snackbar.Snackbar
 import org.greenrobot.eventbus.EventBus
@@ -654,7 +654,7 @@ class FtpServerFragment : Fragment(R.layout.fragment_ftp) {
         )
         spannedStatusNoConnection = HtmlCompat.fromHtml(
             "$statusHead<b>&nbsp;&nbsp;&nbsp;&nbsp;" +
-                "<font color='${Utils.getColor(context, android.R.color.holo_red_light)}'>" +
+                "<font color='${_root_ide_package_.com.amaze.filemanager.filesystem.utils.Utils.getColor(context, android.R.color.holo_red_light)}'>" +
                 "${resources.getString(R.string.ftp_status_no_connection)}</font></b>",
             FROM_HTML_MODE_COMPACT
         )
@@ -664,7 +664,8 @@ class FtpServerFragment : Fragment(R.layout.fragment_ftp) {
             FROM_HTML_MODE_COMPACT
         )
         spannedStatusSecure = HtmlCompat.fromHtml(
-            "$statusHead<b>&nbsp;&nbsp;&nbsp;&nbsp;<font color='${Utils.getColor(
+            "$statusHead<b>&nbsp;&nbsp;&nbsp;&nbsp;<font color='${
+                _root_ide_package_.com.amaze.filemanager.filesystem.utils.Utils.getColor(
                 context,
                 android.R.color.holo_green_light
             )}'>" +
@@ -706,15 +707,15 @@ class FtpServerFragment : Fragment(R.layout.fragment_ftp) {
 
         when (mainActivity.appTheme) {
             AppTheme.LIGHT -> {
-                startDividerView.setBackgroundColor(Utils.getColor(context, R.color.divider))
-                statusDividerView.setBackgroundColor(Utils.getColor(context, R.color.divider))
+                startDividerView.setBackgroundColor(_root_ide_package_.com.amaze.filemanager.filesystem.utils.Utils.getColor(context, R.color.divider))
+                statusDividerView.setBackgroundColor(_root_ide_package_.com.amaze.filemanager.filesystem.utils.Utils.getColor(context, R.color.divider))
             }
             AppTheme.DARK, AppTheme.BLACK -> {
                 startDividerView.setBackgroundColor(
-                    Utils.getColor(context, R.color.divider_dark_card)
+                    _root_ide_package_.com.amaze.filemanager.filesystem.utils.Utils.getColor(context, R.color.divider_dark_card)
                 )
                 statusDividerView.setBackgroundColor(
-                    Utils.getColor(context, R.color.divider_dark_card)
+                    _root_ide_package_.com.amaze.filemanager.filesystem.utils.Utils.getColor(context, R.color.divider_dark_card)
                 )
             }
             else -> {
@@ -919,7 +920,7 @@ class FtpServerFragment : Fragment(R.layout.fragment_ftp) {
 
     private fun promptUserToEnableWireless() {
         // No wifi, no data, no connection at all
-        snackbar = Utils.showThemedSnackbar(
+        snackbar = _root_ide_package_.com.amaze.filemanager.filesystem.utils.Utils.showThemedSnackbar(
             activity as MainActivity?,
             getString(R.string.ftp_server_prompt_connect_to_network),
             BaseTransientBottomBar.LENGTH_INDEFINITE,

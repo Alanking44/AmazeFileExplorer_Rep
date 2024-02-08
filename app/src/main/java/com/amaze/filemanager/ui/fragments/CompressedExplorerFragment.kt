@@ -78,7 +78,7 @@ import com.amaze.filemanager.ui.theme.AppTheme
 import com.amaze.filemanager.ui.views.DividerItemDecoration
 import com.amaze.filemanager.ui.views.FastScroller
 import com.amaze.filemanager.utils.BottomBarButtonPath
-import com.amaze.filemanager.utils.Utils
+import com.amaze.filemanager.filesystem.utils.Utils
 import com.github.junrar.exception.UnsupportedRarV5Exception
 import com.google.android.material.appbar.AppBarLayout
 import com.google.android.material.appbar.AppBarLayout.OnOffsetChangedListener
@@ -220,12 +220,12 @@ class CompressedExplorerFragment : Fragment(), BottomBarButtonPath {
         when (utilsProvider.appTheme) {
             AppTheme.DARK ->
                 requireView()
-                    .setBackgroundColor(Utils.getColor(context, R.color.holo_dark_background))
+                    .setBackgroundColor(_root_ide_package_.com.amaze.filemanager.filesystem.utils.Utils.getColor(context, R.color.holo_dark_background))
             AppTheme.BLACK ->
-                listView?.setBackgroundColor(Utils.getColor(context, android.R.color.black))
+                listView?.setBackgroundColor(_root_ide_package_.com.amaze.filemanager.filesystem.utils.Utils.getColor(context, android.R.color.black))
             else ->
                 listView?.setBackgroundColor(
-                    Utils.getColor(
+                    _root_ide_package_.com.amaze.filemanager.filesystem.utils.Utils.getColor(
                         context,
                         android.R.color.background_light
                     )
@@ -410,7 +410,7 @@ class CompressedExplorerFragment : Fragment(), BottomBarButtonPath {
             mode.title = getString(R.string.select)
             requireMainActivity().updateViews(
                 ColorDrawable(
-                    Utils.getColor(
+                    _root_ide_package_.com.amaze.filemanager.filesystem.utils.Utils.getColor(
                         context,
                         R.color.holo_dark_action_mode
                     )
@@ -422,7 +422,7 @@ class CompressedExplorerFragment : Fragment(), BottomBarButtonPath {
                     .getBoolean(PreferencesConstants.PREFERENCE_COLORED_NAVIGATION)
                 ) {
                     window.navigationBarColor =
-                        Utils.getColor(context, android.R.color.black)
+                        _root_ide_package_.com.amaze.filemanager.filesystem.utils.Utils.getColor(context, android.R.color.black)
                 }
             }
             if (SDK_INT < KITKAT) {

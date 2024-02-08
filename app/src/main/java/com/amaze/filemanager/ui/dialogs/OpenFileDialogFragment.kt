@@ -54,7 +54,7 @@ import com.amaze.filemanager.ui.icons.MimeTypes
 import com.amaze.filemanager.ui.provider.UtilitiesProvider
 import com.amaze.filemanager.ui.startActivityCatchingSecurityException
 import com.amaze.filemanager.ui.views.ThemedTextView
-import com.amaze.filemanager.utils.GlideConstants
+import com.amaze.filemanager.filesystem.utils.GlideConstants
 import com.bumptech.glide.integration.recyclerview.RecyclerViewPreloader
 import com.bumptech.glide.util.ViewPreloadSizeProvider
 import org.slf4j.Logger
@@ -314,7 +314,7 @@ class OpenFileDialogFragment : BaseBottomSheetFragment(), AdjustListViewForTv<Ap
             GlideApp.with(this),
             modelProvider,
             sizeProvider,
-            GlideConstants.MAX_PRELOAD_FILES
+            _root_ide_package_.com.amaze.filemanager.filesystem.utils.GlideConstants.MAX_PRELOAD_FILES
         )
         sharedPreferences = PreferenceManager.getDefaultSharedPreferences(requireContext())
 

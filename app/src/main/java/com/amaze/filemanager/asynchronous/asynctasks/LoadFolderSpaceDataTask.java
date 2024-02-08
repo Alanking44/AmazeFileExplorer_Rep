@@ -20,7 +20,7 @@
 
 package com.amaze.filemanager.asynchronous.asynctasks;
 
-import static com.amaze.filemanager.utils.Utils.getColor;
+import static com.amaze.filemanager.filesystem.utils.Utils.getColor;
 
 import java.util.ArrayList;
 import java.util.List;

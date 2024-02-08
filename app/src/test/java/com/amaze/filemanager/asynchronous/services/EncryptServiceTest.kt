@@ -45,7 +45,7 @@ import com.amaze.filemanager.shadows.ShadowMultiDex
 import com.amaze.filemanager.ui.notifications.NotificationConstants
 import com.amaze.filemanager.utils.AESCrypt
 import com.amaze.filemanager.utils.CryptUtilTest.Companion.initMockSecretKeygen
-import com.amaze.filemanager.utils.ProgressHandler
+import com.amaze.filemanager.filesystem.utils.ProgressHandler
 import org.awaitility.Awaitility.await
 import org.junit.After
 import org.junit.Assert.assertArrayEquals
@@ -139,7 +139,7 @@ class EncryptServiceTest {
             ApplicationProvider.getApplicationContext(),
             HybridFileParcelable(targetFile.absolutePath),
             Environment.getExternalStorageDirectory().absolutePath,
-            ProgressHandler(),
+            _root_ide_package_.com.amaze.filemanager.filesystem.utils.ProgressHandler(),
             ArrayList<HybridFile>(),
             null
         )

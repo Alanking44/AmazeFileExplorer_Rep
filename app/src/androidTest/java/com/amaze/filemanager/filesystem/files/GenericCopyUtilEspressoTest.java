@@ -40,7 +40,7 @@ import org.junit.runner.RunWith;
 
 import com.amaze.filemanager.asynchronous.management.ServiceWatcherUtil;
 import com.amaze.filemanager.test.DummyFileGenerator;
-import com.amaze.filemanager.utils.ProgressHandler;
+import com.amaze.filemanager.filesystem.utils.ProgressHandler;
 
 import androidx.test.ext.junit.runners.AndroidJUnit4;
 import androidx.test.platform.app.InstrumentationRegistry;

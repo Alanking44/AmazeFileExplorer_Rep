@@ -24,7 +24,7 @@ import com.afollestad.materialdialogs.DialogAction;
 import com.afollestad.materialdialogs.MaterialDialog;
 import com.amaze.filemanager.R;
 import com.amaze.filemanager.ui.activities.superclasses.BasicActivity;
-import com.amaze.filemanager.utils.DataUtils;
+import com.amaze.filemanager.filesystem.utils.DataUtils;
 import com.amaze.filemanager.utils.SimpleTextWatcher;
 import com.google.android.material.textfield.TextInputLayout;
 

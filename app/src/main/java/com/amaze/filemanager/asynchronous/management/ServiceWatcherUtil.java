@@ -37,7 +37,7 @@ import com.amaze.filemanager.asynchronous.AbstractRepeatingRunnable;
 import com.amaze.filemanager.asynchronous.services.AbstractProgressiveService;
 import com.amaze.filemanager.fileoperations.utils.UpdatePosition;
 import com.amaze.filemanager.ui.notifications.NotificationConstants;
-import com.amaze.filemanager.utils.ProgressHandler;
+import com.amaze.filemanager.filesystem.utils.ProgressHandler;
 
 import android.app.NotificationManager;
 import android.content.Context;

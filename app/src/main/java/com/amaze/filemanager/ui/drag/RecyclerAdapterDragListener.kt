@@ -32,7 +32,7 @@ import com.amaze.filemanager.filesystem.HybridFileParcelable
 import com.amaze.filemanager.ui.dialogs.DragAndDropDialog
 import com.amaze.filemanager.ui.fragments.MainFragment
 import com.amaze.filemanager.ui.fragments.preferencefragments.PreferencesConstants
-import com.amaze.filemanager.utils.DataUtils
+import com.amaze.filemanager.filesystem.utils.DataUtils
 import com.amaze.filemanager.utils.safeLet
 import kotlin.collections.ArrayList
 
@@ -57,7 +57,7 @@ class RecyclerAdapterDragListener(
                 if (dragAndDropPref
                     != PreferencesConstants.PREFERENCE_DRAG_TO_SELECT
                 ) {
-                    val dataUtils = DataUtils.getInstance()
+                    val dataUtils = _root_ide_package_.com.amaze.filemanager.filesystem.utils.DataUtils.getInstance()
                     dataUtils.checkedItemsList = null
                     mainFragment.requireMainActivity()
                         .tabFragment.dragPlaceholder?.visibility = View.INVISIBLE
@@ -184,7 +184,7 @@ class RecyclerAdapterDragListener(
                     if (checkedItems?.size == 0) {
                         // probably because we switched tabs and
                         // this adapter doesn't have any checked items, get from data utils
-                        val dataUtils = DataUtils.getInstance()
+                        val dataUtils = _root_ide_package_.com.amaze.filemanager.filesystem.utils.DataUtils.getInstance()
                         Log.d(
                             TAG,
                             "Didn't find checked items in adapter, " +

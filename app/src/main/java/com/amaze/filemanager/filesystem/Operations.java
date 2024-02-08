@@ -49,7 +49,7 @@ import com.amaze.filemanager.filesystem.root.MakeFileCommand;
 import com.amaze.filemanager.filesystem.root.RenameFileCommand;
 import com.amaze.filemanager.filesystem.ssh.SFtpClientTemplate;
 import com.amaze.filemanager.filesystem.ssh.SshClientUtils;
-import com.amaze.filemanager.utils.DataUtils;
+import com.amaze.filemanager.filesystem.utils.DataUtils;
 import com.amaze.filemanager.utils.OTGUtil;
 import com.cloudrail.si.interfaces.CloudStorage;
 

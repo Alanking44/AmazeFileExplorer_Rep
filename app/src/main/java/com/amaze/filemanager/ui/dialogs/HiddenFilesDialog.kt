@@ -28,7 +28,7 @@ import com.amaze.filemanager.fileoperations.filesystem.OpenMode
 import com.amaze.filemanager.filesystem.files.FileUtils
 import com.amaze.filemanager.ui.activities.MainActivity
 import com.amaze.filemanager.ui.fragments.MainFragment
-import com.amaze.filemanager.utils.DataUtils
+import com.amaze.filemanager.filesystem.utils.DataUtils
 
 object HiddenFilesDialog {
     /**
@@ -43,7 +43,7 @@ object HiddenFilesDialog {
             mainActivity,
             mainFragment,
             sharedPrefs,
-            FileUtils.toHybridFileConcurrentRadixTree(DataUtils.getInstance().hiddenFiles),
+            FileUtils.toHybridFileConcurrentRadixTree(_root_ide_package_.com.amaze.filemanager.filesystem.utils.DataUtils.getInstance().hiddenFiles),
             null,
             false
         )

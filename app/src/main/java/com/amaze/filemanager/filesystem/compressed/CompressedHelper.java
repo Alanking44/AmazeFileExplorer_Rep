@@ -50,7 +50,7 @@ import com.amaze.filemanager.filesystem.compressed.showcontents.helpers.TarLzmaD
 import com.amaze.filemanager.filesystem.compressed.showcontents.helpers.TarXzDecompressor;
 import com.amaze.filemanager.filesystem.compressed.showcontents.helpers.UnknownCompressedFileDecompressor;
 import com.amaze.filemanager.filesystem.compressed.showcontents.helpers.ZipDecompressor;
-import com.amaze.filemanager.utils.Utils;
+import com.amaze.filemanager.filesystem.utils.Utils;
 
 import android.content.Context;
 

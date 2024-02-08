@@ -20,6 +20,7 @@
 
 package com.amaze.filemanager.utils;
 
+import com.amaze.filemanager.filesystem.utils.Utils;
 import com.amaze.filemanager.ui.activities.superclasses.BasicActivity;
 
 public class Billing {

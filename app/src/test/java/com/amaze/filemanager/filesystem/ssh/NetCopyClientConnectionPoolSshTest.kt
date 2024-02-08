@@ -35,7 +35,7 @@ import com.amaze.filemanager.filesystem.ssh.test.TestUtils
 import com.amaze.filemanager.shadows.ShadowMultiDex
 import com.amaze.filemanager.test.ShadowPasswordUtil
 import com.amaze.filemanager.utils.PasswordUtil
-import com.amaze.filemanager.utils.Utils
+import com.amaze.filemanager.filesystem.utils.Utils
 import io.reactivex.android.plugins.RxAndroidPlugins
 import io.reactivex.plugins.RxJavaPlugins
 import io.reactivex.schedulers.Schedulers
@@ -421,7 +421,7 @@ class NetCopyClientConnectionPoolSshTest {
                 )
             )
         doNothing().`when`(mock).disconnect()
-        if (!Utils.isNullOrEmpty(validPassword)) {
+        if (!_root_ide_package_.com.amaze.filemanager.filesystem.utils.Utils.isNullOrEmpty(validPassword)) {
             doNothing().`when`(mock).authPassword(validUsername, validPassword)
             doThrow(UserAuthException("Invalid login/password"))
                 .`when`(mock)

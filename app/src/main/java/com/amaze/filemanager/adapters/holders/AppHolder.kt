@@ -32,7 +32,7 @@ import androidx.core.view.marginTop
 import androidx.recyclerview.widget.RecyclerView
 import com.amaze.filemanager.R
 import com.amaze.filemanager.ui.views.ThemedTextView
-import com.amaze.filemanager.utils.Utils
+import com.amaze.filemanager.filesystem.utils.Utils
 
 class AppHolder(view: View) : RecyclerView.ViewHolder(view) {
     @JvmField
@@ -64,7 +64,7 @@ class AppHolder(view: View) : RecyclerView.ViewHolder(view) {
         layoutParams.setMargins(
             txtDesc.marginLeft,
             txtDesc.marginTop,
-            Utils.dpToPx(view.context, 4),
+            _root_ide_package_.com.amaze.filemanager.filesystem.utils.Utils.dpToPx(view.context, 4),
             txtDesc.marginBottom
         )
         txtDesc.layoutParams = layoutParams

@@ -35,14 +35,14 @@ import com.amaze.filemanager.database.models.OperationData
 import com.amaze.filemanager.databinding.DialogTwoedittextsBinding
 import com.amaze.filemanager.filesystem.files.FileUtils
 import com.amaze.filemanager.ui.views.preference.PathSwitchPreference
-import com.amaze.filemanager.utils.DataUtils
+import com.amaze.filemanager.filesystem.utils.DataUtils
 import com.amaze.filemanager.utils.SimpleTextWatcher
 
 class BookmarksPrefsFragment : BasePrefsFragment() {
     override val title = R.string.show_bookmarks_pref
 
     companion object {
-        private val dataUtils = DataUtils.getInstance()!!
+        private val dataUtils = _root_ide_package_.com.amaze.filemanager.filesystem.utils.DataUtils.getInstance()!!
     }
 
     private val position: MutableMap<Preference, Int> = HashMap()

@@ -50,7 +50,7 @@ class AESCryptTest {
         crypter.encrypt(
             `in` = ByteArrayInputStream(contents),
             out = out,
-            progressHandler = ProgressHandler()
+            progressHandler = _root_ide_package_.com.amaze.filemanager.filesystem.utils.ProgressHandler()
         )
         out.close()
         val encrypted = out.toByteArray()
@@ -73,7 +73,7 @@ class AESCryptTest {
         crypter.encrypt(
             `in` = ByteArrayInputStream(contents),
             out = out,
-            progressHandler = ProgressHandler()
+            progressHandler = _root_ide_package_.com.amaze.filemanager.filesystem.utils.ProgressHandler()
         )
         out.close()
         val encrypted = out.toByteArray()

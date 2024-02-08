@@ -95,7 +95,7 @@ class CryptUtilTest {
         CryptUtil(
             AppConfig.getInstance(),
             HybridFileParcelable(sourceFile.absolutePath),
-            ProgressHandler(),
+            _root_ide_package_.com.amaze.filemanager.filesystem.utils.ProgressHandler(),
             ArrayList(),
             "test.bin.$targetExtension",
             useAescrypt,
@@ -113,7 +113,7 @@ class CryptUtilTest {
                 it.setSize(targetFile.length())
             },
             Environment.getExternalStorageDirectory().absolutePath,
-            ProgressHandler(),
+            _root_ide_package_.com.amaze.filemanager.filesystem.utils.ProgressHandler(),
             ArrayList(),
             password
         )
@@ -143,7 +143,7 @@ class CryptUtilTest {
             HybridFileParcelable(sourceFolder.absolutePath).also {
                 it.isDirectory = true
             },
-            ProgressHandler(),
+            _root_ide_package_.com.amaze.filemanager.filesystem.utils.ProgressHandler(),
             ArrayList(),
             "test.$targetExtension",
             useAescrypt,
@@ -162,7 +162,7 @@ class CryptUtilTest {
                 it.isDirectory = true
             },
             Environment.getExternalStorageDirectory().absolutePath,
-            ProgressHandler(),
+            _root_ide_package_.com.amaze.filemanager.filesystem.utils.ProgressHandler(),
             ArrayList(),
             password
         )

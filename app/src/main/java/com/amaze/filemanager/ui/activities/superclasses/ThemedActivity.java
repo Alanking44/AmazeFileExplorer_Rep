@@ -32,7 +32,7 @@ import com.amaze.filemanager.ui.fragments.preferencefragments.PreferencesConstan
 import com.amaze.filemanager.ui.theme.AppTheme;
 import com.amaze.filemanager.ui.theme.AppThemePreference;
 import com.amaze.filemanager.utils.PreferenceUtils;
-import com.amaze.filemanager.utils.Utils;
+import com.amaze.filemanager.filesystem.utils.Utils;
 import com.readystatesoftware.systembartint.SystemBarTintManager;
 
 import android.app.ActivityManager;

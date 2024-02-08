@@ -48,7 +48,7 @@ import com.amaze.filemanager.filesystem.ftpserver.RootFileSystemFactory
 import com.amaze.filemanager.ui.fragments.preferencefragments.PreferencesConstants.PREFERENCE_ROOTMODE
 import com.amaze.filemanager.ui.notifications.FtpNotification
 import com.amaze.filemanager.ui.notifications.NotificationConstants
-import com.amaze.filemanager.utils.ObtainableServiceBinder
+import com.amaze.filemanager.filesystem.utils.ObtainableServiceBinder
 import com.amaze.filemanager.utils.PasswordUtil
 import org.apache.ftpserver.ConnectionConfigFactory
 import org.apache.ftpserver.FtpServer
@@ -77,7 +77,8 @@ import kotlin.concurrent.thread
  * Edited by zent-co on 30-07-2019 Edited by bowiechen on 2019-10-19.
  */
 class FtpService : Service(), Runnable {
-    private val binder: IBinder = ObtainableServiceBinder(this)
+    private val binder: IBinder =
+        _root_ide_package_.com.amaze.filemanager.filesystem.utils.ObtainableServiceBinder(this)
 
     // Service will broadcast via event bus when server start/stop
     enum class FtpReceiverActions {

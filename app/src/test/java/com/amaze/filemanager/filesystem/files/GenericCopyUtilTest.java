@@ -43,7 +43,7 @@ import org.robolectric.RuntimeEnvironment;
 
 import com.amaze.filemanager.asynchronous.management.ServiceWatcherUtil;
 import com.amaze.filemanager.test.DummyFileGenerator;
-import com.amaze.filemanager.utils.ProgressHandler;
+import com.amaze.filemanager.filesystem.utils.ProgressHandler;
 
 @RunWith(Theories.class)
 public class GenericCopyUtilTest {

@@ -45,8 +45,8 @@ import com.amaze.filemanager.ui.drag.DragToTrashListener;
 import com.amaze.filemanager.ui.drag.TabFragmentSideDragListener;
 import com.amaze.filemanager.ui.fragments.preferencefragments.PreferencesConstants;
 import com.amaze.filemanager.ui.views.Indicator;
-import com.amaze.filemanager.utils.DataUtils;
-import com.amaze.filemanager.utils.Utils;
+import com.amaze.filemanager.filesystem.utils.DataUtils;
+import com.amaze.filemanager.filesystem.utils.Utils;
 
 import android.animation.ArgbEvaluator;
 import android.content.SharedPreferences;

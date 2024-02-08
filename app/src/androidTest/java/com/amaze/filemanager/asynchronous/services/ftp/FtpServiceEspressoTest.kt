@@ -27,7 +27,7 @@ import androidx.preference.PreferenceManager
 import androidx.test.core.app.ApplicationProvider
 import androidx.test.ext.junit.runners.AndroidJUnit4
 import androidx.test.rule.ServiceTestRule
-import com.amaze.filemanager.utils.ObtainableServiceBinder
+import com.amaze.filemanager.filesystem.utils.ObtainableServiceBinder
 import com.amaze.filemanager.utils.PasswordUtil
 import org.apache.commons.net.PrintCommandListener
 import org.apache.commons.net.ftp.FTP
@@ -296,7 +296,7 @@ class FtpServiceEspressoTest {
                     FtpService::class.java
                 )
             )
-        return ((binder as ObtainableServiceBinder<FtpService>).service as FtpService).also {
+        return ((binder as _root_ide_package_.com.amaze.filemanager.filesystem.utils.ObtainableServiceBinder<FtpService>).service as FtpService).also {
             it.onStartCommand(intent, 0, 0)
         }
     }

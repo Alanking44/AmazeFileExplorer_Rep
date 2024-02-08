@@ -46,10 +46,10 @@ import com.amaze.filemanager.ui.ExtensionsKt;
 import com.amaze.filemanager.ui.activities.superclasses.BasicActivity;
 import com.amaze.filemanager.ui.activities.superclasses.ThemedActivity;
 import com.amaze.filemanager.ui.provider.UtilitiesProvider;
-import com.amaze.filemanager.utils.EditTextColorStateUtil;
+import com.amaze.filemanager.filesystem.utils.EditTextColorStateUtil;
 import com.amaze.filemanager.utils.PasswordUtil;
 import com.amaze.filemanager.utils.SimpleTextWatcher;
-import com.amaze.filemanager.utils.Utils;
+import com.amaze.filemanager.filesystem.utils.Utils;
 import com.amaze.filemanager.utils.smb.SmbUtil;
 import com.google.android.material.textfield.TextInputLayout;
 
@@ -373,6 +373,7 @@ public class SmbConnectDialog extends DialogFragment {
                   conName.getText().toString(),
                   SmbUtil.getSmbEncryptedPath(getActivity(), smbFile.getPath())
                 };
+              Log.d(TAG, "onCreateDialog: conname-"+s);
           } catch (Exception e) {
             LOG.warn("failed to load smb dialog info", e);
             Toast.makeText(getActivity(), getString(R.string.error), Toast.LENGTH_LONG).show();

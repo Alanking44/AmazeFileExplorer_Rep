@@ -41,7 +41,7 @@ import com.amaze.filemanager.fileoperations.filesystem.OpenMode;
 import com.amaze.filemanager.filesystem.cloud.CloudUtil;
 import com.amaze.filemanager.filesystem.files.GenericCopyUtil;
 import com.amaze.filemanager.ui.activities.MainActivity;
-import com.amaze.filemanager.utils.DataUtils;
+import com.amaze.filemanager.filesystem.utils.DataUtils;
 import com.amaze.filemanager.utils.OTGUtil;
 import com.amaze.filemanager.utils.smb.SmbUtil;
 import com.cloudrail.si.interfaces.CloudStorage;

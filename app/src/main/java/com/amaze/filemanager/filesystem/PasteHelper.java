@@ -32,7 +32,7 @@ import com.amaze.filemanager.R;
 import com.amaze.filemanager.asynchronous.asynctasks.movecopy.PreparePasteTask;
 import com.amaze.filemanager.ui.activities.MainActivity;
 import com.amaze.filemanager.ui.fragments.MainFragment;
-import com.amaze.filemanager.utils.Utils;
+import com.amaze.filemanager.filesystem.utils.Utils;
 import com.google.android.material.snackbar.BaseTransientBottomBar;
 import com.google.android.material.snackbar.Snackbar;
 

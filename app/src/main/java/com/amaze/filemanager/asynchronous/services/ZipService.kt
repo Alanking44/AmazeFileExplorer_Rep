@@ -42,8 +42,8 @@ import com.amaze.filemanager.filesystem.files.GenericCopyUtil
 import com.amaze.filemanager.ui.activities.MainActivity
 import com.amaze.filemanager.ui.notifications.NotificationConstants
 import com.amaze.filemanager.utils.DatapointParcelable
-import com.amaze.filemanager.utils.ObtainableServiceBinder
-import com.amaze.filemanager.utils.ProgressHandler
+import com.amaze.filemanager.filesystem.utils.ObtainableServiceBinder
+import com.amaze.filemanager.filesystem.utils.ProgressHandler
 import io.reactivex.Completable
 import io.reactivex.CompletableEmitter
 import io.reactivex.android.schedulers.AndroidSchedulers
@@ -66,12 +66,14 @@ class ZipService : AbstractProgressiveService() {
 
     private val log: Logger = LoggerFactory.getLogger(ZipService::class.java)
 
-    private val mBinder: IBinder = ObtainableServiceBinder(this)
+    private val mBinder: IBinder =
+        _root_ide_package_.com.amaze.filemanager.filesystem.utils.ObtainableServiceBinder(this)
     private val disposables = CompositeDisposable()
     private lateinit var mNotifyManager: NotificationManagerCompat
     private lateinit var mBuilder: NotificationCompat.Builder
     private var progressListener: ProgressListener? = null
-    private val progressHandler = ProgressHandler()
+    private val progressHandler =
+        _root_ide_package_.com.amaze.filemanager.filesystem.utils.ProgressHandler()
 
     // list of data packages, to initiate chart in process viewer fragment
     private val dataPackages = ArrayList<DatapointParcelable>()
@@ -171,7 +173,7 @@ class ZipService : AbstractProgressiveService() {
 
     override fun getDataPackages(): ArrayList<DatapointParcelable> = dataPackages
 
-    override fun getProgressHandler(): ProgressHandler = progressHandler
+    override fun getProgressHandler(): _root_ide_package_.com.amaze.filemanager.filesystem.utils.ProgressHandler = progressHandler
 
     override fun clearDataPackages() = dataPackages.clear()
 

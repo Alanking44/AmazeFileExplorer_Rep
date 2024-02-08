@@ -27,7 +27,7 @@ import com.amaze.filemanager.adapters.HiddenAdapter
 import com.amaze.filemanager.filesystem.files.FileUtils
 import com.amaze.filemanager.ui.activities.MainActivity
 import com.amaze.filemanager.ui.fragments.MainFragment
-import com.amaze.filemanager.utils.DataUtils
+import com.amaze.filemanager.filesystem.utils.DataUtils
 
 object HistoryDialog {
     /**
@@ -42,7 +42,7 @@ object HistoryDialog {
             mainActivity,
             mainFragment,
             sharedPrefs,
-            FileUtils.toHybridFileArrayList(DataUtils.getInstance().history),
+            FileUtils.toHybridFileArrayList(_root_ide_package_.com.amaze.filemanager.filesystem.utils.DataUtils.getInstance().history),
             null,
             true
         )
@@ -54,7 +54,7 @@ object HistoryDialog {
             builder.negativeColor(mainActivity.accent)
             builder.title(R.string.history)
             builder.onNegative { _: MaterialDialog?, _: DialogAction? ->
-                DataUtils.getInstance().clearHistory()
+                _root_ide_package_.com.amaze.filemanager.filesystem.utils.DataUtils.getInstance().clearHistory()
             }
             builder.theme(appTheme.getMaterialDialogTheme())
             builder.adapter(adapter, null)

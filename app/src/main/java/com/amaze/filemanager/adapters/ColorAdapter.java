@@ -22,7 +22,7 @@ package com.amaze.filemanager.adapters;
 
 import com.amaze.filemanager.R;
 import com.amaze.filemanager.ui.views.CheckableCircleView;
-import com.amaze.filemanager.utils.Utils;
+import com.amaze.filemanager.filesystem.utils.Utils;
 
 import android.content.Context;
 import android.view.LayoutInflater;
